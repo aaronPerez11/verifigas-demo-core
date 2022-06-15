@@ -9,8 +9,8 @@
 		<version>2.6.7</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.catalogos</groupId>
-	<artifactId>catalogos</artifactId>
+	<groupId>com.verificador.catalagos</groupId>
+	<artifactId>verifigas-demo-core</artifactId>
 	<version>1.0.0</version>
 	<name>verifigas-demo-core</name>
 	<description>Demo project for Spring Boot</description>
