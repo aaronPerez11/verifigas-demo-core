@@ -27,6 +27,6 @@ public interface Constantes {
 	String CODE_BAD_REQUEST = "400";
 	String CODE_NOT_FOUND = "404";
 	
-	String CROSSORIGIN = "http://localhost:4200";
+	String CROSSORIGIN = "https://verifigas-demo-ui.azurewebsites.net";
 	String DATE_FORMAT = "yyyy-MM-dd:hh:mm:ss";
 }
