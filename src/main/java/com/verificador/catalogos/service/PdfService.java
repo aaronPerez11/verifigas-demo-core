@@ -4,6 +4,7 @@ import static com.verificador.catalogos.utils.Utilidades.formatoFecha;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -85,7 +86,7 @@ public class PdfService {
 	 */
 	private void complementarPDF(List<GasolineraErrorSistemaModel> erroresGasolinera, Long idError, Table table, Document documento) {
 		List<GasolineraErrorSistemaModel> erroresFiltrados = erroresGasolinera.stream().filter(error -> 
-		error.getErrorSistemaModel().getIdTipoError().equals(idError)).toList();
+		error.getErrorSistemaModel().getIdTipoError().equals(idError)).collect(Collectors.toList());
 		
 		erroresFiltrados.forEach(e -> {				
 				table.addCell(identificarEstatus(e.isCorrecto()));
